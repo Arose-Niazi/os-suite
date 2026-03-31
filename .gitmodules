@@ -1,0 +1,3 @@
+[submodule "scheduling"]
+	path = scheduling
+	url = git@github.com:Arose-Niazi/scheduling-solver.git

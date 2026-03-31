@@ -1,0 +1,15 @@
+name: os-suite
+
+services:
+  web:
+    build: .
+    container_name: os-suite-web
+    restart: unless-stopped
+    networks:
+      - proxy
+    expose:
+      - "80"
+
+networks:
+  proxy:
+    external: true
