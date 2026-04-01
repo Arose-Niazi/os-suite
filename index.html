@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OS Tools — Operating Systems</title>
-    <meta name="description" content="Free online operating systems tools with step-by-step visualizations. CPU Scheduling Simulator with FCFS, SJF, Priority, and Round Robin algorithms featuring multi-core Gantt charts.">
-    <meta name="keywords" content="operating systems, CPU scheduling, FCFS, SJF, priority scheduling, round robin, Gantt chart, multi-core, process scheduling, OS tools, scheduling simulator">
+    <meta name="description" content="Free online operating systems tools with step-by-step visualizations. CPU Scheduling, Page Replacement, Disk Scheduling, Deadlock Detection, and Memory Allocation simulators.">
+    <meta name="keywords" content="operating systems, CPU scheduling, page replacement, disk scheduling, deadlock detection, banker's algorithm, memory allocation, first fit, best fit, FIFO, LRU, FCFS, SJF, SCAN, OS tools, simulator">
     <meta name="author" content="Arose Niazi">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://os.arose-niazi.me/">
 
     <meta property="og:title" content="OS Tools — Operating Systems">
-    <meta property="og:description" content="Free online operating systems tools — CPU scheduling simulator with multi-core Gantt charts and algorithm comparison.">
+    <meta property="og:description" content="Free online OS tools — CPU Scheduling, Page Replacement, Disk Scheduling, Deadlock Detection & Memory Allocation simulators with step-by-step visualizations.">
     <meta property="og:url" content="https://os.arose-niazi.me/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="OS Suite">
@@ -110,7 +110,7 @@
 
     <header>
         <h1>⚙️ OS Tools</h1>
-        <p>Interactive tools for Operating Systems — CPU scheduling algorithms with visual Gantt charts and performance metrics.</p>
+        <p>Interactive tools for Operating Systems — CPU scheduling, page replacement, disk scheduling, deadlock detection, and memory allocation with step-by-step visualizations.</p>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
     </header>
 
@@ -128,11 +128,65 @@
                 </div>
                 <div class="tool-arrow">Open simulator →</div>
             </a>
+
+            <a href="./page-replacement/" class="tool-card">
+                <div class="tool-icon">📄</div>
+                <h2>Page Replacement Simulator</h2>
+                <p>Visualize virtual memory page replacement algorithms step by step. See frame states, hit/miss ratios, and compare algorithms on the same reference string.</p>
+                <div class="tool-methods">
+                    <span class="method-tag">FIFO</span>
+                    <span class="method-tag">LRU</span>
+                    <span class="method-tag">Optimal</span>
+                    <span class="method-tag">Clock</span>
+                    <span class="method-tag">LFU</span>
+                </div>
+                <div class="tool-arrow">Open simulator →</div>
+            </a>
+
+            <a href="./disk-scheduling/" class="tool-card">
+                <div class="tool-icon">💿</div>
+                <h2>Disk Scheduling Visualizer</h2>
+                <p>Visualize disk arm movement across cylinders for different scheduling algorithms. See seek sequences, total seek distance, and compare algorithms.</p>
+                <div class="tool-methods">
+                    <span class="method-tag">FCFS</span>
+                    <span class="method-tag">SSTF</span>
+                    <span class="method-tag">SCAN</span>
+                    <span class="method-tag">C-SCAN</span>
+                    <span class="method-tag">LOOK</span>
+                    <span class="method-tag">C-LOOK</span>
+                </div>
+                <div class="tool-arrow">Open visualizer →</div>
+            </a>
+
+            <a href="./deadlock/" class="tool-card">
+                <div class="tool-icon">🔒</div>
+                <h2>Deadlock Detection & Banker's Algorithm</h2>
+                <p>Check system safety with Banker's Algorithm or detect deadlocks. Step-by-step execution with Resource Allocation Graph visualization.</p>
+                <div class="tool-methods">
+                    <span class="method-tag">Banker's Algorithm</span>
+                    <span class="method-tag">Deadlock Detection</span>
+                    <span class="method-tag">RAG Visualization</span>
+                </div>
+                <div class="tool-arrow">Open tool →</div>
+            </a>
+
+            <a href="./memory-allocation/" class="tool-card">
+                <div class="tool-icon">🧩</div>
+                <h2>Memory Allocation Simulator</h2>
+                <p>Simulate contiguous memory allocation strategies. Visual memory maps, step-by-step allocation, and fragmentation analysis.</p>
+                <div class="tool-methods">
+                    <span class="method-tag">First Fit</span>
+                    <span class="method-tag">Best Fit</span>
+                    <span class="method-tag">Worst Fit</span>
+                    <span class="method-tag">Next Fit</span>
+                </div>
+                <div class="tool-arrow">Open simulator →</div>
+            </a>
         </div>
 
         <section class="info-section">
             <h2>Why these tools?</h2>
-            <p>Built for students studying Operating Systems. Visualize how scheduling algorithms work with interactive Gantt charts and step-by-step process execution.</p>
+            <p>Built for students studying Operating Systems. Visualize how scheduling, memory management, and resource allocation algorithms work with interactive charts and step-by-step execution.</p>
         </section>
     </main>
 

@@ -1,3 +1,15 @@
 [submodule "scheduling"]
 	path = scheduling
 	url = git@github.com:Arose-Niazi/scheduling-solver.git
+[submodule "page-replacement"]
+	path = page-replacement
+	url = git@github.com:Arose-Niazi/os-page-replacement.git
+[submodule "disk-scheduling"]
+	path = disk-scheduling
+	url = git@github.com:Arose-Niazi/os-disk-scheduling.git
+[submodule "deadlock"]
+	path = deadlock
+	url = git@github.com:Arose-Niazi/os-deadlock-detection.git
+[submodule "memory-allocation"]
+	path = memory-allocation
+	url = git@github.com:Arose-Niazi/os-memory-allocation.git
